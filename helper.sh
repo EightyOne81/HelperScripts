@@ -72,7 +72,7 @@ case $1 in
 		sudo mkdir -p $backup_drive
 		sudo mount /dev/sdb1 $backup_drive
 
-		rm -R $backup_drive/*
+		rm -Rf $backup_drive/*
 
 		for file in $(cat $backup_file); do
 			parent=$(dirname $file)
