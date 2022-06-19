@@ -162,7 +162,7 @@ case $1 in
 		;;
 
 	"cpu-temp")
-		awk 'NR==1 {print $1/1000}' /sys/class/thermal/thermal_zone*/temp
+		awk 'NR==1 {print $1/1000}' /sys/class/thermal/thermal_zone0/temp
 		;;
 
 	"mem-used")
